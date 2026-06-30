@@ -1,4 +1,4 @@
-export default function QuizPage() {
+export default function SoundPage() {
   return (
     <>
       <div

@@ -6,6 +6,7 @@ import DedicationPage from './pages/DedicationPage'
 import QuizPage from './pages/QuizPage'
 import MapPage from './pages/MapPage'
 import GalleryPage from './pages/GalleryPage'
+import SoundPage from './pages/SoundPage'
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ export const router = createBrowserRouter([
       { path: '/quiz', element: <QuizPage /> },
       { path: '/mapa', element: <MapPage /> },
       { path: '/galeria', element: <GalleryPage /> },
+      { path: '/som-ambiente', element: <SoundPage /> },
     ],
   },
 ])

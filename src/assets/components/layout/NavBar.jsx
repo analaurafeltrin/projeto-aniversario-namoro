@@ -9,6 +9,7 @@ const links = [
   { label: 'Quiz', to: '/quiz' },
   { label: 'Mapa', to: '/mapa' },
   { label: 'Galeria', to: '/galeria' },
+  { label: 'Som ambiente', to: '/som-ambiente' },
 ]
 
 const navStyle = {
