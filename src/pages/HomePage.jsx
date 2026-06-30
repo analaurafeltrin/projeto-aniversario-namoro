@@ -25,7 +25,7 @@ const btnSeta = {
   borderRadius: '50%',
   width: '2.5rem',
   height: '2.5rem',
-  fontSize: '1.4rem',
+  fontSize: '1.7rem',
   cursor: 'pointer',
   color: 'var(--color-muted)',
   display: 'flex',
@@ -103,7 +103,7 @@ export default function HomePage() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '0.5rem',
+          gap: '1rem',
         }}
       >
         {/* Slide atual */}
@@ -205,7 +205,7 @@ export default function HomePage() {
         )}
 
         {/* Setas + bolinhas */}
-        <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
           <button onClick={anterior} style={btnSeta}>
             &#8249;
           </button>
@@ -216,7 +216,7 @@ export default function HomePage() {
                 key={i}
                 onClick={() => setAtual(i)}
                 style={{
-                  width: i === atual ? '1.5rem' : '0.55rem',
+                  width: i === atual ? '1.20rem' : '0.5rem',
                   height: '0.55rem',
                   borderRadius: '999px',
                   border: 'none',
