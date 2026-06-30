@@ -13,8 +13,8 @@ const slides = [
   {
     tipo: 'imagem',
     src: areus,
-    legenda: 'Areus',
-    subtitulo: 'o sortudo que vai ver esse site',
+    legenda: 'Areus Lindo',
+    subtitulo: 'o lindo sortudo que recebeu esse presente',
   },
   { tipo: 'texto' },
 ]
@@ -52,7 +52,7 @@ export default function HomePage() {
         style={{
           backgroundImage: `url(${img})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center 15%',
+          backgroundPosition: 'center 5%',
           backgroundRepeat: 'no-repeat',
           minHeight: '100vh',
           width: '100%',
@@ -104,15 +104,14 @@ export default function HomePage() {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '0.5rem',
-          padding: '2.5rem 1.5rem 3rem',
         }}
       >
         {/* Slide atual */}
         <div
           style={{
             width: '100%',
-            maxWidth: '420px',
-            height: '500px',
+            maxWidth: '350px',
+            height: '400px',
             borderRadius: '1.5rem',
             overflow: 'hidden',
             boxShadow: '0 8px 32px rgba(0,0,0,0.12)',
@@ -188,20 +187,22 @@ export default function HomePage() {
         )}
 
         {/* Botão voltar */}
-        <button
-          onClick={voltar}
-          style={{
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            color: 'var(--color-muted)',
-            fontSize: '0.85rem',
-            letterSpacing: '0.05em',
-            textDecoration: 'none',
-          }}
-        >
-          ← voltar
-        </button>
+        {atual === slides.length - 1 && (
+          <button
+            onClick={voltar}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              color: 'var(--color-muted)',
+              fontSize: '0.85rem',
+              letterSpacing: '0.05em',
+              textDecoration: 'none',
+            }}
+          >
+            ← voltar
+          </button>
+        )}
 
         {/* Setas + bolinhas */}
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
