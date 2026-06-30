@@ -7,10 +7,10 @@
     --color-bg: #fdf6f0;
     --color-surface: #fff8f4;
     --color-border: #f0d9cc;
-    --color-accent: #c97b84;
+    --color-accent: #b04f5a;
     --color-accent-2: #e8b4b8;
     --color-text: #3d2b2b;
-    --color-muted: #9c7878;
+    --color-muted: #33171e;
 
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Inter', system-ui, sans-serif;
@@ -23,7 +23,7 @@
     --color-accent: #c97b84;
     --color-accent-2: #9b5ea2;
     --color-text: #f0e6f6;
-    --color-muted: #f1adb5;
+    --color-muted: #f1c1d7;
   }
 
   * {
