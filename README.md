@@ -1,16 +1,48 @@
-# React + Vite
+# 💑 Projeto Aniversário de Namoro
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> _Uma página especial e interativa desenvolvida como presente para celebrar nossa história e criar memórias digitais._
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💡 Sobre o projeto
 
-## React Compiler
+Este projeto nasceu de uma ideia muito especial: transformar nossos momentos, piadas internas e marcos do namoro em uma experiência digital única.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Decidi usar o que estou aprendendo em desenvolvimento web para construir algo personalizado, interativo e que ficasse guardado para sempre.
 
-## Expanding the Oxlint configuration
+Pude aplicar conceitos de estilização, interatividade e lógica para criar uma linha do tempo, galeria de fotos e outras coisas que representasse nossa trajetória como casal.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+O foco principal foi criar uma interface afetiva, fluida e responsiva, garantindo que a surpresa funcionasse perfeitamente tanto no computador quanto no celular.
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
+- **Git & GitHub**
+
+---
+
+## ✨ O que você vai encontrar no projeto
+
+- **Linha do Tempo** — Registros dos nossos principais marcos desde o início.
+- **Contador de Tempo** — Um contador dinâmico mostrando os dias, horas e minutos da nossa jornada juntos.
+- **Galeria de Fotos** — Um espaço dedicado às nossas fotos favoritas com legendas especiais.
+- **Mensagens e Detalhes Personalizados** — Elementos visuais e textos que tornam a página 100% nossa.
+
+---
+
+## 🚀 O que falta ser feito
+- [ ] **Contador de tempo juntos** 
+- [ ] **Página 'do começo' -> timeline** 
+- [ ] **Página com quiz interativo** 
+- [ ] **Página com mapa de cidades que já visitamos** 
+- [ ] **Página da galeria de fotos** 
+
+---
+
+## 👤 Autor
+
+Feito por **Ana Laura Feltrin** • [LinkedIn](https://www.linkedin.com/in/analaurafeltrin) • [GitHub](https://github.com/analaurafeltrin)
