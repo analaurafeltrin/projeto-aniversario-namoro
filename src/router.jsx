@@ -8,17 +8,20 @@ import MapPage from './pages/MapPage'
 import GalleryPage from './pages/GalleryPage'
 import SoundPage from './pages/SoundPage'
 
-export const router = createBrowserRouter([
-  {
-    element: <RootLayout />,
-    children: [
-      { path: '/', element: <HomePage /> },
-      { path: '/timeline', element: <TimelinePage /> },
-      { path: '/dedicatoria', element: <DedicationPage /> },
-      { path: '/quiz', element: <QuizPage /> },
-      { path: '/mapa', element: <MapPage /> },
-      { path: '/galeria', element: <GalleryPage /> },
-      { path: '/som-ambiente', element: <SoundPage /> },
-    ],
-  },
-])
+export const router = createBrowserRouter(
+  [
+    {
+      element: <RootLayout />,
+      children: [
+        { path: '/', element: <HomePage /> },
+        { path: '/timeline', element: <TimelinePage /> },
+        { path: '/dedicatoria', element: <DedicationPage /> },
+        { path: '/quiz', element: <QuizPage /> },
+        { path: '/mapa', element: <MapPage /> },
+        { path: '/galeria', element: <GalleryPage /> },
+        { path: '/som-ambiente', element: <SoundPage /> },
+      ],
+    },
+  ],
+  { basename: '/projeto-aniversario-namoro/' }
+)
