@@ -1,0 +1,77 @@
+.pagina {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+}
+
+.pagina .trilha {
+  width: 100%;
+}
+
+.trilha {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5.4rem;
+  overflow-x: auto;
+  padding: 3rem 3rem;
+}
+
+.trilha::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-border);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .trilha {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 75vh;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+  }
+  .trilha::before {
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+  }
+}
+
+.ponto {
+  position: relative;
+  z-index: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 5rem;
+  flex-shrink: 0;
+}
+
+.bolinha {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  border: 3px solid var(--color-surface);
+  box-shadow: 0 0 0 2px var(--color-border);
+}
+
+.data {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
