@@ -106,7 +106,7 @@ export default function Navbar() {
               color: 'var(--color-text)',
             }}
           >
-            {theme === 'light' ? '⏾' : '☀︎'}
+            {theme === 'light' ? '🌙' : '☀️'}
           </button>
 
           <button
