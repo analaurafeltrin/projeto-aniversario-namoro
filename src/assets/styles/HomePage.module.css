@@ -1,0 +1,166 @@
+.telaInicial {
+  background-size: cover;
+  background-position: center 5%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 4rem;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.8s ease;
+}
+
+.telaInicial.escondida {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.botaoRevelar {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  transition: background-color 0.2s;
+}
+
+.botaoRevelar:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.carrossel {
+  opacity: 0;
+  transition: opacity 0.8s ease 0.4s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carrossel.visivel {
+  opacity: 1;
+}
+
+.moldura {
+  width: 100%;
+  max-width: 350px;
+  height: 400px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.imagemSlide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.slideTexto {
+  padding: 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.iconeMapa {
+  font-size: 2.5rem;
+}
+
+.slideTextoTitulo {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+.slideTextoSubtitulo {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.legenda {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+
+.subtitulo {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.botaoVoltar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.controles {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.btnSeta {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.pontosContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ponto {
+  width: 0.5rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-border);
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.ponto.ativo {
+  width: 1.2rem;
+  background-color: var(--color-accent);
+}

@@ -6,7 +6,8 @@ import Navbar from '../layout/NavBar'
 import MiniPlayer from '../layout/MiniPlayer'
 
 function Layout() {
-  const { jaTocouAntes, togglePlay, proxima, anterior } = useAudio()
+  const { jaTocouAntes, miniPlayerVisivel, togglePlay, proxima, anterior } =
+    useAudio()
 
   useEffect(() => {
     function handleKeyDown(e) {
@@ -36,7 +37,7 @@ function Layout() {
       <main style={{ paddingTop: '56px', position: 'relative', zIndex: 1 }}>
         <Outlet />
       </main>
-      {jaTocouAntes && <MiniPlayer />}
+      {jaTocouAntes && miniPlayerVisivel && <MiniPlayer />}
     </>
   )
 }

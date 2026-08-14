@@ -39,6 +39,7 @@ export function AudioProvider({ children }) {
   const [tocando, setTocando] = useState(false)
   const [faixaAtual, setFaixaAtual] = useState(0)
   const [jaTocouAntes, setJaTocouAntes] = useState(false)
+  const [miniPlayerVisivel, setMiniPlayerVisivel] = useState(true)
 
   function tocar(indice) {
     const audio = audioRef.current
@@ -58,6 +59,7 @@ export function AudioProvider({ children }) {
     audio.play()
     setTocando(true)
     setJaTocouAntes(true)
+    setMiniPlayerVisivel(true)
   }
 
   function togglePlay() {
@@ -82,6 +84,13 @@ export function AudioProvider({ children }) {
     tocar(ant)
   }
 
+  function fechar() {
+    const audio = audioRef.current
+    if (audio) audio.pause()
+    setTocando(false)
+    setMiniPlayerVisivel(false)
+  }
+
   return (
     <AudioContext.Provider
       value={{
@@ -92,6 +101,9 @@ export function AudioProvider({ children }) {
         proxima,
         anterior,
         jaTocouAntes,
+        miniPlayerVisivel,
+        setMiniPlayerVisivel,
+        fechar,
       }}
     >
       <audio ref={audioRef} onEnded={proxima} />

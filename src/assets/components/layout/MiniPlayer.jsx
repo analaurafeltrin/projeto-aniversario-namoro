@@ -1,7 +1,8 @@
 import { useAudio, playlist } from '../../context/AudioContext'
 
 export default function MiniPlayer() {
-  const { tocando, faixaAtual, togglePlay, proxima, anterior } = useAudio()
+  const { tocando, faixaAtual, togglePlay, proxima, anterior, fechar } =
+    useAudio()
 
   const faixa = playlist[faixaAtual]
 

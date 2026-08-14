@@ -4,7 +4,7 @@ import { useTheme } from '../../context/ThemeContext'
 
 const links = [
   { label: 'Início', to: '/' },
-  { label: 'Do Começo', to: '/timeline' },
+  { label: 'Timeline', to: '/timeline' },
   { label: 'Dedicatória', to: '/dedicatoria' },
   { label: 'Quiz', to: '/quiz' },
   { label: 'Mapa', to: '/mapa' },
