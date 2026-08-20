@@ -5,6 +5,8 @@ import faixa2 from '../../assets/audio/Dinossauros.mp3'
 import faixa3 from '../../assets/audio/Sucker.mp3'
 import faixa4 from '../../assets/audio/Fumes.mp3'
 import faixa5 from '../../assets/audio/Babydoll.mp3'
+import faixa6 from '../../assets/audio/As-Flores-E-O-Louco.mp3'
+import faixa7 from '../../assets/audio/Hero.mp3'
 
 export const playlist = [
   {
@@ -29,6 +31,20 @@ export const playlist = [
     artista: 'Dominic Fike',
     src: faixa5,
     emoji: '👧',
+  },
+  {
+    id: 5,
+    titulo: 'As Flores e o Louco',
+    artista: 'Fábio Brazza',
+    src: faixa6,
+    emoji: '💐',
+  },
+  {
+    id: 6,
+    titulo: 'Hero',
+    artista: 'Skillet',
+    src: faixa7,
+    emoji: '🦸‍♂️',
   },
 ]
 
