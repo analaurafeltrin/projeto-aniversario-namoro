@@ -16,7 +16,7 @@ import natal from '../assets/images/timeline-page/image-12.jpg'
 import uberabs from '../assets/images/timeline-page/image-13.jpg'
 import festa from '../assets/images/timeline-page/image-14.jpg'
 import casamento from '../assets/images/timeline-page/image-15.jpg'
-import copa from '../assets/images/timeline-page/image-16.jpg'
+import copa from '../assets/images/timeline-page/image-16.JPG'
 
 const marcos = [
   {
@@ -67,7 +67,7 @@ const marcos = [
     legenda:
       'Nosso primeiro Halloween, e nossa melhor fantasia. Não é atoa que ganhamos o concurso, né?',
   },
-   {
+  {
     data: '01/09/2024',
     titulo: 'O fatídico... O fatídico dia...',
     imagem: portao,
@@ -83,13 +83,12 @@ const marcos = [
     legenda:
       'Comprou seu humilde e funcional Uno. Fiquei muito feliz pela sua conquista!',
   },
-    {
+  {
     data: '24/12/2024',
     titulo: 'Natal',
     imagem: natal,
     focoImagem: 'center 35%',
-    legenda:
-      'Nosso 1º natal juntos, uhul 🎅',
+    legenda: 'Nosso 1º natal juntos, uhul 🎅',
   },
   {
     data: '21/01/2025',
@@ -131,7 +130,7 @@ const marcos = [
     legenda:
       'Bom. A primeira vez na vida que fomos padrinhos. DEFINITIVAMENTE, nunca esqueceremos desse casório, não é? 😫',
   },
-   {
+  {
     data: '05/07/2026',
     titulo: 'Copa',
     imagem: copa,
