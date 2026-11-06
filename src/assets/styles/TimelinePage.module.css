@@ -1,13 +1,44 @@
 .pagina {
   min-height: calc(100vh - 56px);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+/* ---------- Título ---------- */
+.cabecalho {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+}
+
+.titulo {
+  font-family: 'Playfair Display', serif; /* mesma fonte do logo "Ana & Areus" */
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--color-accent);
+  margin: 0 0 0.5rem;
+}
+
+.subtitulo {
+  color: var(--color-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---------- Conjunto de linhas ---------- */
+.linhas {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* mantém tudo centralizado quando há poucas linhas */
+  gap: 2rem;
+  width: 100%;
 }
 
 .pagina .trilha {
   width: 100%;
 }
 
+/* ---------- Uma linha da timeline ---------- */
 .trilha {
   position: relative;
   display: flex;
@@ -29,16 +60,20 @@
   z-index: 0;
 }
 
+/* ---------- Mobile ---------- */
 @media (max-width: 768px) {
+  .linhas {
+    gap: 0; /* as linhas se emendam numa trilha só */
+  }
+
   .trilha {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    overflow-y: auto;
-    max-height: 75vh;
     gap: 1.5rem;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
   }
+
   .trilha::before {
     top: 0;
     left: 50%;
@@ -47,6 +82,7 @@
   }
 }
 
+/* ---------- Pontos ---------- */
 .ponto {
   position: relative;
   z-index: 1;
