@@ -36,7 +36,7 @@ O foco principal foi criar uma interface afetiva, fluida e responsiva, garantind
 
 ## 🚀 O que falta ser feito
 - [ ] **Contador de tempo juntos** 
-- [ ] **Página 'do começo' -> timeline** 
+- [X] **Página 'do começo' -> timeline** 
 - [ ] **Página com quiz interativo** 
 - [ ] **Página com mapa de cidades que já visitamos** 
 - [ ] **Página da galeria de fotos** 
